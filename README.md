@@ -1,37 +1,260 @@
-## Welcome to GitHub Pages
+MarkDown語法大全
+===
 
-You can use the [editor on GitHub](https://github.com/MingRay98/test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+@copyright MRcoding筆記
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---
 
-### Markdown
+主標題
+===
+>標題的語法
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+標題
+===
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+---
 
-### Jekyll Themes
+副標
+---
+>副標的語法
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MingRay98/test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+副標
+---
+```
 
-### Support or Contact
+---
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+字體大小
+---
+>字體大小的示範
+># H1
+>## H2
+>### H3
+>#### H4
+>##### H5
+
+
+```
+# H1
+## H2
+### H3
+#### H4
+##### H5
+```
+
+---
+
+字體效果
+---
+>*斜體字*
+>**粗體字**
+>***斜粗體***
+~~刪除線~~
+_斜體2_
+__斜粗2__
+
+```
+*斜體字*
+**粗體字**
+***斜體兼粗體***
+~~刪除線~~
+_斜體2_
+__斜粗2__
+```
+
+---
+
+引文
+---
+>縮排語法
+>第一層
+>>第二層
+>>>第三層
+
+```
+>縮排語法
+>第一層
+>>第二層
+>>>第三層
+```
+
+---
+
+標號
+---
+1. 數字標號
+2. 數字標號
+3. 數字標號
+- 其他標號
++ 其他標號
+* 其他標號
+
+```
+1. 數字標號
+2. 數字標號
+3. 數字標號
+- 其他標號
++ 其他標號
+* 其他標號
+```
+
+---
+
+縮排+換行
+---
+	縮排語法
+斷行  
+
+
+```MD
+Tab縮排語法
+行末兩個空格  産生斷行。
+```
+
+---
+
+巢狀標號
+---
+
+1. 第一層
+	1. 第二層分之一
+	內容
+	2. 第二層分之二
+	    1. 第三層分之一
+		內容
+		2. 第三層分之二
+		內容
+
+---
+
+連結
+---
+>[連結名稱](https://google.com)
+
+```
+[連結名稱](https://google.com)
+```
+
+---
+
+簡易超連結
+---
+><https://google.com>
+><text@email.com>
+
+```md
+<網址或mail>
+```
+
+---
+
+分隔線
+---
+1.
+
+---
+
+2.
+***
+3.
+- - -
+4.
+* * *
+
+```
+
+---
+
+***
+- - -
+* * *
+```
+
+---
+
+程式碼
+---
+```cpp
+#include <stdio.h>
+
+int main(){
+
+    printf("Hello World");
+
+    return 0;
+}
+```
+
+
+\```程式類型
+程式碼
+\```
+
+---
+
+標籤連結
+---
+[Google][1]
+[Yahoo][2]
+[MSN][3].
+
+  [1]: http://google.com/        "游標顯示"
+  [2]: http://search.yahoo.com/  "游標顯示"
+  [3]: http://search.msn.com/    "游標顯示"
+```
+[Google][1]
+[Yahoo][2]
+[MSN][3]
+
+  [1]: http://google.com/        "游標顯示"
+  [2]: http://search.yahoo.com/  "游標顯示"
+  [3]: http://search.msn.com/    "游標顯示"
+```
+
+---
+
+圖片
+---
+![圖片](https://i1.wp.com/mrcodingroom.freesite.host/wp-content/uploads/2019/01/Drawing.png)
+
+```
+![圖片名稱](連結)
+```
+
+---
+
+表格
+---
+| 欄位1 | 欄位2 | 欄位3 |
+| :-- | --: |:--:|
+| 置左  | 置右 | 置中 |
+| $100 | $100 | $100 |
+| $10 | $10  | $10 |
+| $1  | $1  | $1 |
+
+```
+| 欄位1 | 欄位2 | 欄位3 |
+| :-- | --: |:--:|
+| 置左  | 置右 | 置中 |
+```
+
+---
+
+短區塊
+---
+>`標籤`
+
+---
+
+跳脫字元
+---
+\\+任意符號
+
+\\符號 \\符號
+
+###### tags: `新手教學` `MarkDown語法大全`
+
+
